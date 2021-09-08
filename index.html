@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Product Card</title>
+</head>
+
+<body>
+    <main>
+        <section class="product__cards">
+            <div class="product__card">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="product 1.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="product 2.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="product 3.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="product.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-button-next"><i class="uil uil-angle-right swiper__icon"></i></div>
+                    <div class="swiper-button-prev"><i class="uil uil-angle-left swiper__icon"></i></div>
+                  </div>
+                <div class="product__info">
+                    <h3 class="name">Product Name</h3>
+                    <span class="category">Category Name</span>
+                </div>
+                <div class="product__price">
+                    <div>
+                        <h3 class="rate">$315.00</h3>
+                        <span class="subrate">$380.00</span>
+                    </div>
+                    <h4 class="stock">In stock</h4>
+                </div>
+                <div class="star__rating">
+                    <i class="uil uil-star active__star"></i>
+                    <i class="uil uil-star active__star"></i>
+                    <i class="uil uil-star active__star"></i>
+                    <i class="uil uil-star active__star"></i>
+                    <i class="uil uil-star"></i>
+                </div>
+                <div class="sizes">
+                    <button class="size__btn active__size">S</button>
+                    <button class="size__btn">M</button>
+                    <button class="size__btn">L</button>
+                </div>
+                <div class="options">
+                    <a href="" class="buy__link">Buy Now</a>
+                    <button class="option__btn"><i class="uil uil-heart"></i></button>
+                    <button class="option__btn"><i class="uil uil-shopping-cart-alt"></i></button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+</body>
+
+</html>
